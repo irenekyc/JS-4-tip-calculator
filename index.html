@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JS-4-Tip-Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="calculator-solid.svg">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+    <form id="my-form">
+                <div class="row">
+                    <label for="bill-amount"> Bill Total: $</label>
+                    <input type="number" id="bill">
+                </div>
+                <div class="row tip-row">
+                    <label for="tip-percentage"> Tip: </label>
+                    <input type="number" id="tip-percentage"> 
+                    <label for="tip-percentage">%</label>
+                </div>
+                    <input type="checkbox" name="unknown-percentage" id="unknownpercentages">
+                    <label class="align-right" for="unknown-percentage"> I don't know how much I should tip</label>
+                <div class="satisifcation-row">
+                    <span class="satisifcation-question"> How would you rate your server?</span>
+                    <div class="satisifcation-answer">
+                    <input type="radio" id="great" name="satisifcation" value="25">
+                    <label for="male">Great</label><br>
+                    <input type="radio" id="good" name="satisifcation" value="20">
+                    <label for="good">Good</label><br>
+                    <input type="radio" id="average" name="satisifcation" value="15">
+                    <label for="other">Average</label>
+                    <input type="radio" id="bad" name="satisifcation" value="15">
+                    <label for="good">Bad</label><br>
+                    <input type="radio" id="terrible" name="satisifcation" value="12">
+                    <label for="other">Terrible</label>
+                    </div>
+                </div>
+                <div class="row">
+                    <button onclick="getValue()"> Submit</button>
+                </div>
+            </form>
+        </div>
+        <div class="output-container"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
